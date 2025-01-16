@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'LXGWNeoZhiSongScreenFull';
+    src: url('\static\fonts\LXGWNeoZhiSongScreenFull.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LXGWWenKaiMono-Medium';
+    src: url('\static\fonts\LXGWWenKaiMono-Medium.ttf') format('truetype'); 
+    font-weight: medium;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LXGWWenKaiMono-Regular';
+    src: url('\static\fonts\LXGWWenKaiMono-Regular.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LXGWWenKaiMono-Light';
+    src: url('\static\fonts\LXGWWenKaiMono-Light.ttf') format('truetype'); 
+    font-weight: light;
+    font-style: normal;
+}

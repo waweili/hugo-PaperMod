@@ -1,0 +1,152 @@
+baseURL: "https://examplesite.com/"
+languageCode: zh-cn
+title: Frogtank
+pagination.pagerSize: 5
+theme: ["PaperMod"]
+archetypeDir: \archetypes\posts.md
+
+enableInlineShortcodes: true
+enableEmoji: true
+enableRobotsTXT: true #启用 robots.txt 文件，允许搜索引擎爬虫访问网站。
+buildDrafts: false #是否构建草稿文章，false 表示不构建
+buildFuture: false #是否构建未来的文章，false 表示不构建发布日期在未来的文章
+buildExpired: false #是否构建过期的文章，false 表示不构建过期的文章
+
+#压缩参数
+minify:
+  disableXML: true
+  minifyOutput: true
+
+#站点的自定义参数
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Frogtank
+  description: "description" #网站描述，显示在页面的 meta 标签中
+  keywords: [Blog, 博客, 青蛙水缸]
+  author: 蛙味梨
+  # author: ["Me", "You"] # multiple authors
+  images: ["<link or path of image for opengraph, twitter-cards>"] #社交分享时展示的图片
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false #是否禁用主题切换，false 允许切换
+
+  # 功能展示配置
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false #禁用代码复制按钮，false 表示禁用
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true #是否启用 Hugo 自带的目录生成功能
+  disableSpecial1stPost: false #是否禁用首页的第一篇文章的特殊样式
+  disableScrollToTop: true 
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true #是否展示文章内部的目录
+  tocopen: true #是否默认展开目录
+
+  #网站图标与资源配置
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "<link / abs url>"
+    favicon16x16: "<link / abs url>"
+    favicon32x32: "<link / abs url>"
+    apple_touch_icon: "<link / abs url>"
+    safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "青蛙水缸"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode 
+  profileMode:
+    enabled: false # needs to be explicitly set 可以控制页面中是否展示个人信息
+    title: 青蛙水缸
+    subtitle: "青蛙自建栖息地" #个人资料的副标题，用于补充说明，比如一句标语或描述
+    imageUrl: "https://img.blog.frogtank.me/img-example.jpg" #个人资料模式中显示的图片链接，通常是头像或标志图片
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image #alt
+    buttons: #配置个人资料模式中显示的按钮，常用于导航到特定的页面
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "有青蛙在此处生长 \U0001F44B"
+    Content: 发在这里的博文通常很长
+
+  # 其他社媒
+  socialIcons:
+    - name: x
+      url: "https://x.com/"
+    - name: stackoverflow
+      url: "https://stackoverflow.com"
+    - name: github
+      url: "https://github.com/"
+
+  #SOE 设置
+  analytics:
+    google:
+      SiteVerificationTag: "Frogtank"
+    bing:
+      SiteVerificationTag: "Frogtank"
+    yandex:
+      SiteVerificationTag: "Frogtank"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+# 导航菜单设置
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
+    - identifier: archive
+      name: Archive
+      url: /archives/
+      weight: 2
+    - identifier: gallery
+      name: Gallery
+      url: /list/
+      weight: 3
+    - identifier: rss
+      name: RSS
+      url: /index.xml
+      weight: 4
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true #是否使用 CSS 类来高亮代码
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
