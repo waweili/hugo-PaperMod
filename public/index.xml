@@ -11,49 +11,21 @@
     </image>
     <generator>Hugo -- 0.140.2</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 15 Jan 2025 23:18:01 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Firstpost</title>
-      <link>http://localhost:1313/posts/firstpost/</link>
-      <pubDate>Wed, 15 Jan 2025 23:18:01 +0800</pubDate>
-      <guid>http://localhost:1313/posts/firstpost/</guid>
-      <description>Desc Text.</description>
-    </item>
-    <item>
-      <title>A_new_year</title>
-      <link>http://localhost:1313/posts/a_new_year/</link>
-      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/a_new_year/</guid>
-      <description>Desc Text.</description>
-    </item>
-    <item>
-      <title>Archives</title>
-      <link>http://localhost:1313/archives/</link>
-      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/archives/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Be_A_new_man</title>
-      <link>http://localhost:1313/be_a_new_man/</link>
-      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/be_a_new_man/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>广州好嘢</title>
-      <link>http://localhost:1313/%E5%B9%BF%E5%B7%9E%E5%A5%BD%E5%98%A2/</link>
+      <link>http://localhost:1313/posts/%E5%B9%BF%E5%B7%9E%E5%A5%BD%E5%98%A2/</link>
       <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/%E5%B9%BF%E5%B7%9E%E5%A5%BD%E5%98%A2/</guid>
-      <description>Desc Text.</description>
+      <guid>http://localhost:1313/posts/%E5%B9%BF%E5%B7%9E%E5%A5%BD%E5%98%A2/</guid>
+      <description>在广州吃得特别好</description>
     </item>
     <item>
-      <title>日本游记</title>
-      <link>http://localhost:1313/posts/%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0/</link>
-      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/%E6%97%A5%E6%9C%AC%E6%B8%B8%E8%AE%B0/</guid>
-      <description>Desc Text.</description>
+      <title>一个人在日本玩七天！</title>
+      <link>http://localhost:1313/posts/%E4%B8%80%E4%B8%AA%E4%BA%BA%E5%9C%A8%E6%97%A5%E6%9C%AC%E7%8E%A9%E4%B8%83%E5%A4%A9/</link>
+      <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/%E4%B8%80%E4%B8%AA%E4%BA%BA%E5%9C%A8%E6%97%A5%E6%9C%AC%E7%8E%A9%E4%B8%83%E5%A4%A9/</guid>
+      <description>很长的交通感悟和旅行见闻</description>
     </item>
   </channel>
 </rss>
