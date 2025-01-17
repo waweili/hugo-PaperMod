@@ -1,5 +1,5 @@
 baseURL: "https://examplesite.com/"
-languageCode: zh-cn
+languageCode: zh
 title: Frogtank
 pagination.pagerSize: 5
 theme: ["PaperMod"]
