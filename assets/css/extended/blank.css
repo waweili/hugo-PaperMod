@@ -3,9 +3,15 @@ This is just a placeholder blank stylesheet so as to support adding custom style
 
 Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
 */
+/* ========== 正文字体：落霞孤鹜、Quicksand ========== */
 body {
     font-family: 'Quicksand', 'LXGW WenKai Mono TC', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
 }
 .post-content pre, code {
     font-family: consolas, sans-serif;
+}
+header {
+    font-family: 'Quicksand', 'LXGW WenKai Mono TC', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
 }
