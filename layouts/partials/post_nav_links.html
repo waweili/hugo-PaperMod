@@ -16,4 +16,12 @@
   </a>
   {{- end }}
 </nav>
+<nav>
+  {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}">
+          <span class="zh">{{ .Name }}</span>
+          <span class="en">{{ .Name }}</span>
+      </a>
+  {{ end }}
+</nav>
 {{- end }}

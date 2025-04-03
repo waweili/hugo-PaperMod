@@ -6,6 +6,8 @@
 {{- else }}
 <meta name="robots" content="noindex, nofollow">
 {{- end }}
+<link rel="stylesheet" href="themes/PaperMod/assets/css/common/main.css" | relURL >
+<link rel="stylesheet" href="/themes/PaperMod/assets/css/extended/blank.css">
 
 {{- /* Title */}}
 <title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ site.Title }}</title>

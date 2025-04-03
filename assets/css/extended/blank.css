@@ -11,8 +11,16 @@ body {
 .post-content pre, code {
     font-family: consolas, sans-serif;
 }
-/* ========== 标题字体：落霞孤鹜、Quicksand ========== */
+/* ========== 标题字体：落霞孤鹜 ========== */
 header {
-    font-family: 'Quicksand', 'LXGW WenKai Mono TC', 'Helvetica Neue', sans-serif;
-    font-weight: 700;
+    .zh {
+        font-family: 'LXGW WenKai Mono TC', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+    }
+    
+    .en {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+    }
+    
 }
