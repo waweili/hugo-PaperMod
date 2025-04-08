@@ -1,0 +1,135 @@
+#给标题加编号
+main {
+    counter-reset: h1-cnt h2-cnt h3-cnt h4-cnt h5-cnt h6-cnt;
+}
+
+.post-content h1 {
+    counter-increment: h1-cnt;
+    counter-reset: h2-cnt h3-cnt h4-cnt h5-cnt h6-cnt; /* Reset lower levels */
+}
+
+.post-content h2 {
+    counter-increment: h2-cnt;
+    counter-reset: h3-cnt h4-cnt h5-cnt h6-cnt; /* Reset lower levels */
+}
+
+.post-content h3 {
+    counter-increment: h3-cnt;
+    counter-reset: h4-cnt h5-cnt h6-cnt; /* Reset lower levels */
+}
+
+.post-content h4 {
+    counter-increment: h4-cnt;
+    counter-reset: h5-cnt h6-cnt; /* Reset lower levels */
+}
+
+.post-content h5 {
+    counter-increment: h5-cnt;
+    counter-reset: h6-cnt; /* Reset lower levels */
+}
+
+.post-content h6 {
+    counter-increment: h6-cnt;
+}
+
+.post-content h1::before {
+    content: counter(h1-cnt) '. ';
+}
+
+.post-content h2::before {
+    content: counter(h2-cnt) '. ';
+}
+
+.post-content h3::before {
+    content: counter(h2-cnt) '.' counter(h3-cnt) '. ';
+}
+
+.post-content h4::before {
+    content: counter(h2-cnt) '.' counter(h3-cnt) '.' counter(h4-cnt) '. ';
+}
+
+.post-content h5::before {
+    content: counter(h2-cnt) '.' counter(h3-cnt) '.' counter(h4-cnt) '.' counter(h5-cnt) '. ';
+}
+
+.post-content h6::before {
+    content: counter(h2-cnt) '.' counter(h3-cnt) '.' counter(h4-cnt) '.' counter(h5-cnt) '.' counter(h6-cnt) '. ';
+}
+
+.toc {
+    padding: 14px;
+    border: solid 1px lightgray;
+    font-size: 12px;
+}
+
+
+@media (min-width: 1280px) {
+    .toc {
+        position: sticky;
+        float: left;
+        --toc-left: calc(100vw / 50);
+        left: var(--toc-left); /* _minimum_ distance from left screen border */
+        top: 100px;
+        margin-left: -1000px; /* overruled by left */
+    
+        width: calc((100vw - var(--main-width) - 2 * var(--gap)) / 2 - 2 * var(--toc-left));
+        padding: 14px;
+        border: solid 1px lightgray;
+        font-size: 12px;
+    }
+  
+    .toc .inner {
+        padding: 0;
+    }
+  
+    .toc details summary {
+        margin-inline-start: 0;
+        margin-bottom: 10px;
+    }
+
+}
+
+summary {
+    cursor: pointer !important;
+}
+
+/* 为代码块顶部添加 macos 样式 */
+.article-content {
+    .highlight:before {
+      content: "";
+      display: block;
+      background: url(static\resources\code-header.svg);
+      height: 25px;
+      width: 100%;
+      background-size: 52px;
+      background-repeat: no-repeat;
+      margin-top: -10px;
+      margin-bottom: 0;
+    }
+  }
+
+.chroma {
+    background-color: unset;
+}
+
+/* ========== 正文字体：落霞孤鹜、Quicksand ========== */
+body {
+    font-family: 'Quicksand', 'LXGW WenKai Mono TC', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+.post-content pre, code {
+    font-family: consolas, sans-serif;
+}
+/* ========== 标题字体：落霞孤鹜 ========== */
+header {
+    .zh {
+        font-family: 'LXGW WenKai Mono TC', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+    }
+    
+    .en {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+    }
+    
+}
